@@ -134,8 +134,12 @@ http://localhost:3000/UpdateBook
 - `Book:` Model class representing a book entity.
 
 ##### @PostMapping Example Response and Output,
+
 ```javascript
 POST http://localhost:8080/api/book
+```
+
+``` javascript
 {
   "id":7887,
   "title":"Hp",
@@ -143,15 +147,18 @@ POST http://localhost:8080/api/book
   "pages": 780
 } 
 ```
+
 ```javascript
 Status: 201 Created Size: 19 Bytes Time: 9 ms
 Hurray! Book saved!
 ```
 
 ##### @GetMapping  Example Response and Output for All Saved Books In Database,
+
 ``` javascript
 GET http://localhost:8080/api/books
 ```
+
 ```javascript
 Status: 200k Size: 245 Bytes Time: 19 ms
 Hurray! Book saved!
@@ -184,9 +191,11 @@ Hurray! Book saved!
 ```
 
 ##### @GetMapping  Example Response and Output for using Id ,
+
 ``` javascript
 GET http://localhost:8080/api/books/7887
 ```
+
 ```javascript
 Status: 200 OK Size: 52 Bytes Time: 7 ms
 {
@@ -225,10 +234,12 @@ PUT http://localhost:8080/api/books/{id} eg:id-80,
   }
 
 ```
+
 ```javascript
 Status: 200 OK Size: 37 Bytes Time: 11 ms
 Book with ID 80 updated successfully!
 ```
+
 ## NOTE:
 > For testing purposes, Postman was employed to interact with the API. The operations underwent testing utilizing the endpoints hosted at `localhost:/8080/...`. Snippets of each Backend operation are available for reference at the following link: [Click Here](https://github.com/MunwarAli12/BookStore/tree/main/output%20images). 
 
