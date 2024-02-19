@@ -5,7 +5,7 @@
 
 - Assume as a library clerk, encountered challenges in manually managing and recording data. Therefore, I am seeking a system that can efficiently handle book management tasks. Specifically, I need to input books into the system with four key details: their ID, author, title, and number of pages. Should a book be reissued with the same ID, it is crucial that the system allows for updates to the author, title, and page count. Additionally, in cases where a book is lost, I require the ability to promptly delete it from the records using its unique ID.
   
-- Moreover, when patrons request books by a specific author, it is imperative that the system facilitates a swift retrieval of a comprehensive list of those books. By streamlining these processes, the system aims to simplify book management, maintain impeccable records, and ultimately enhance customer satisfaction.
+- Additionally, when users ask for books by a certain author, it's important that the system quickly gives them a full list of those books. By making these steps easier, the system wants to make managing books simpler, keep really good records, and make customers even happier.
   
 - In this overview I've developed an end-to-end application where user actions on the frontend trigger backend requests. The backend processes these requests, updates the database as needed, and returns the results to the frontend, seamlessly updating the interface. This system streamlines operations and enhances user experience.
 
