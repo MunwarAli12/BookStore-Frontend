@@ -3,8 +3,9 @@
 
 Developed a full stack web application REST API book application that efficiently manages book data, encompassing four key parameters: book ID, author name, pages of book and title.The application seamlessly integrates CRUD (Create, Read, Update, Delete) operations, providing a streamlined approach to handling HTTP requests.
 
-Utilizing MongoDB as the database backend, the application ensures smooth execution of all operations. It consistently delivers appropriate HTTP status codes and responses to clients,ensuring robustness and 
-efficiency in managing and manipulating server objects via the REST API.
+Utilizing MongoDB as the database backend, the application ensures smooth execution of all operations. It consistently delivers appropriate HTTP status codes and responses to clients,ensuring robustness and efficiency in managing and manipulating server objects via the REST API.
+
+Below is an overview of the frontend and backend components, along with instructions on how to set up and run the application.
 
 ## Tech Stack
 - `Java`
@@ -27,8 +28,24 @@ Crud Operator Backend - http://localhost:8080/ Frontend - http://localhost:3000/
 | `PUT`    | `/api/books/{id}`     | Update an existing book. |
 | `DELETE` | `/api/books/{id}`     | Remove a book.           |
 
+## NOTE
+> The frontend communicates with the backend via HTTP requests. Error handling is implemented both on the frontend and backend to provide a smooth user experience. Ensured proper connectivity between the frontend and backend by adjusting CORS settings if necessary.
 
-## Frontend Part,
+
+## Frontend Part Overview,
+
+### Technologies Used:
+
+- `React.js for building the user interface` `Axios for handling HTTP requests`
+`React Router for client-side routing`
+
+#### components:
+
+- `AddBook:` Allows users to add new books to the database.
+- `DeleteBook:` Enables users to delete books by their unique ID.
+- `GetBookById:` Retrieves book details based on the provided ID.
+- `GetBooksByAuthor:` Fetches books written by a specific author.
+- `UpdateBook:` Allows users to update book details.
 
 #### HOME Page,
 
@@ -94,7 +111,17 @@ http://localhost:3000/UpdateBook
 
 
 
-## Backend Part,
+## Backend Part Overview,
+
+### Technologies Used:
+- `Spring Boot for creating RESTful APIs` `MongoDB for data storage` `Spring Data MongoDB for database operations`
+
+#### Components:
+
+- `BookController:` Handles HTTP requests related to book operations.
+- `BookService:` Implements business logic for book operations.
+- `BookRepository:` Interface for database CRUD operations.
+- `Book:` Model class representing a book entity.
 
 ##### @PostMapping Example Response and Output,
 ```javascript
@@ -192,10 +219,11 @@ PUT http://localhost:8080/api/books/{id} eg:id-80,
 Status: 200 OK Size: 37 Bytes Time: 11 ms
 Book with ID 80 updated successfully!
 ```
+## NOTE:
+> For testing purposes, Postman was employed to interact with the API. The operations underwent testing utilizing the endpoints hosted at `localhost:/8080/...`. Snippets of each Backend operation are available for reference at the following link: [Click Here](https://github.com/MunwarAli12/BookStore/tree/main/output%20images). > 
 
-## NOTE
-> For testing purposes, Postman was employed to interact with the API. The operations underwent testing utilizing the endpoints hosted at `localhost:/8080/...`.
-> Snippets of each operation are available for reference at the following link: [Click Here](https://github.com/MunwarAli12/BookStore/tree/main/output%20images).
+
+
 
 
 
