@@ -1,22 +1,22 @@
 
 # BookStore Application
 
- Developed a REST API book backend application that efficiently manages book data, encompassing four key parameters: book ID, author name, pages of book and title.The application seamlessly integrates CRUD 
- (Create, Read, Update, Delete) operations, providing a streamlined approach to handling HTTP requests.
+Developed a full stack web application REST API book application that efficiently manages book data, encompassing four key parameters: book ID, author name, pages of book and title.The application seamlessly integrates CRUD (Create, Read, Update, Delete) operations, providing a streamlined approach to handling HTTP requests.
 
- Utilizing MongoDB as the database backend, the application ensures smooth execution of all operations. It consistently delivers appropriate HTTP status codes and responses to clients,ensuring robustness and 
- efficiency in managing and manipulating server objects via the REST API.
+Utilizing MongoDB as the database backend, the application ensures smooth execution of all operations. It consistently delivers appropriate HTTP status codes and responses to clients,ensuring robustness and 
+efficiency in managing and manipulating server objects via the REST API.
 
 ## Tech Stack
-
+- `Java`
+- `Frontend Framework` `React`
 - `Backend Framework:` `Spring Boot`
-- `Databases:` `MongoDb` `MySQL`
+- `Databases:` `MongoDb` 
 - `Tools:` `Postman` `VsCode`
 
 ### API Endpoints
 
 ```bash
-Crud Operator- http://localhost:8080/
+Crud Operator Backend - http://localhost:8080/ Frontend - http://localhost:3000/
 ```
 
 | Method   | Endpoint              | Description              |
@@ -27,6 +27,74 @@ Crud Operator- http://localhost:8080/
 | `PUT`    | `/api/books/{id}`     | Update an existing book. |
 | `DELETE` | `/api/books/{id}`     | Remove a book.           |
 
+
+## Frontend Part,
+
+#### HOME Page,
+
+``` javascript
+http://localhost:3000/
+```
+![image](https://github.com/MunwarAli12/BookStore-Frontend/assets/126280146/1f1c60a1-d2ce-4675-8179-ef142ba9b7cb)
+
+#### ADD BOOK Page,
+
+#### 
+   ``` javascript
+       http://localhost:3000/AddBook
+   ```
+- Upon submission of the details via the web UI, the backend endpoint is triggered, leading to the storage of the book details in the MongoDB database.
+
+![image](https://github.com/MunwarAli12/BookStore-Frontend/assets/126280146/b5b785ca-00b8-45e9-8682-810b1b9cfdda)
+
+- The stored book details can be viewed in the database.
+
+![image](https://github.com/MunwarAli12/BookStore-Frontend/assets/126280146/7ffcd59d-d00b-4e8d-a5b5-0068a4e51ea4)
+
+
+
+#### DELETE BOOK By Id,
+
+``` javascript
+http://localhost:3000/DeleteBook
+```
+- Upon entering all the details, the backend API triggers the deletion of the corresponding ID.
+
+![image](https://github.com/MunwarAli12/BookStore-Frontend/assets/126280146/927fae5e-a22f-4b95-aea9-39d85184eae7)
+
+- The book with ID 45 has been successfully deleted.
+
+![image](https://github.com/MunwarAli12/BookStore-Frontend/assets/126280146/aa767ef8-b1fa-4574-9d0d-bde7142c1786)
+
+
+
+#### Get Book Details By Id,
+
+``` javascript
+http://localhost:3000/GetBookById
+```
+- Upon entering all the necessary information, the GET mapping triggers the endpoint, retrieving the book information.
+  
+![image](https://github.com/MunwarAli12/BookStore-Frontend/assets/126280146/9823d831-0e2a-4427-aceb-241cf79079ce)
+
+
+#### Update Book Details by Id,
+
+```javascript
+http://localhost:3000/UpdateBook
+```
+
+![image](https://github.com/MunwarAli12/BookStore-Frontend/assets/126280146/57c9a287-578d-41b5-945c-32d499fb3c51)
+
+- In this scenario, upon submitting the modified parameters for the author, title, and pages, the "PUT" mapping triggers the endpoint, facilitating the update process. For instance, if we wish to change the title of the book with ID 788 to "Bahubali 2", the modification is executed accordingly.
+
+![image](https://github.com/MunwarAli12/BookStore-Frontend/assets/126280146/dcf0aadc-e6c9-40d9-8d0c-1446bde56a6c)
+
+![image](https://github.com/MunwarAli12/BookStore-Frontend/assets/126280146/82727de0-db90-4318-8448-ec945e24f270)
+
+
+
+## Backend Part,
 
 ##### @PostMapping Example Response and Output,
 ```javascript
