@@ -3,7 +3,7 @@
 
 ## Problem Statement,
 
-- As a library clerk, I encounter challenges in manually managing and recording data. Therefore, I am seeking a system that can efficiently handle book management tasks. Specifically, I need to input books into the system with four key details: their ID, author, title, and number of pages. Should a book be reissued with the same ID, it is crucial that the system allows for updates to the author, title, and page count. Additionally, in cases where a book is lost, I require the ability to promptly delete it from the records using its unique ID.
+- Assume as a library clerk, encountered challenges in manually managing and recording data. Therefore, I am seeking a system that can efficiently handle book management tasks. Specifically, I need to input books into the system with four key details: their ID, author, title, and number of pages. Should a book be reissued with the same ID, it is crucial that the system allows for updates to the author, title, and page count. Additionally, in cases where a book is lost, I require the ability to promptly delete it from the records using its unique ID.
   
 - Moreover, when patrons request books by a specific author, it is imperative that the system facilitates a swift retrieval of a comprehensive list of those books. By streamlining these processes, the system aims to simplify book management, maintain impeccable records, and ultimately enhance customer satisfaction.
   
