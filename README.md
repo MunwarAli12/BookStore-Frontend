@@ -1,20 +1,31 @@
 
 # BookStore Application
 
-Developed a full stack web application REST API book application that efficiently manages book data, encompassing four key parameters: book ID, author name, pages of book and title.The application seamlessly integrates CRUD (Create, Read, Update, Delete) operations, providing a streamlined approach to handling HTTP requests.
+## Problem Statement,
 
-Utilizing MongoDB as the database backend, the application ensures smooth execution of all operations. It consistently delivers appropriate HTTP status codes and responses to clients,ensuring robustness and efficiency in managing and manipulating server objects via the REST API.
+- As a library clerk, I encounter challenges in manually managing and recording data. Therefore, I am seeking a system that can efficiently handle book management tasks. Specifically, I need to input books into the system with four key details: their ID, author, title, and number of pages. Should a book be reissued with the same ID, it is crucial that the system allows for updates to the author, title, and page count. Additionally, in cases where a book is lost, I require the ability to promptly delete it from the records using its unique ID.
+  
+- Moreover, when patrons request books by a specific author, it is imperative that the system facilitates a swift retrieval of a comprehensive list of those books. By streamlining these processes, the system aims to simplify book management, maintain impeccable records, and ultimately enhance customer satisfaction.
+  
+- In this overview I've developed an end-to-end application where user actions on the frontend trigger backend requests. The backend processes these requests, updates the database as needed, and returns the results to the frontend, seamlessly updating the interface. This system streamlines operations and enhances user experience.
 
-Below is an overview of the frontend and backend components, along with instructions on how to set up and run the application.
+## WorkFlow
 
-## Tech Stack
+- We have developed a full-stack web application called the "REST API Book Application" that efficiently handles book data. This application encompasses essential parameters such as book ID, author name, number of pages, and title. It seamlessly integrates CRUD (Create, Read, Update, Delete) operations, providing a streamlined approach to managing HTTP requests.
+
+- Utilizing MongoDB as the database backend, the application ensures smooth execution of all operations. It consistently delivers appropriate HTTP status codes and responses to clients, ensuring robustness and efficiency in managing and manipulating server objects via the REST API.
+
+- Below is an overview of the frontend and backend components, along with instructions on how to set up and run the application. For Backend Source Code, click [here](https://github.com/MunwarAli12/BookStore).
+
+## Tech Stack,
+
 - `Java`
 - `Frontend Framework` `React`
 - `Backend Framework:` `Spring Boot`
 - `Databases:` `MongoDb` 
 - `Tools:` `Postman` `VsCode`
 
-### API Endpoints
+### API Endpoints,
 
 ```bash
 Crud Operator Backend - http://localhost:8080/ Frontend - http://localhost:3000/
@@ -67,7 +78,6 @@ http://localhost:3000/
 - The stored book details can be viewed in the database.
 
 ![image](https://github.com/MunwarAli12/BookStore-Frontend/assets/126280146/7ffcd59d-d00b-4e8d-a5b5-0068a4e51ea4)
-
 
 
 #### DELETE BOOK By Id,
@@ -220,7 +230,7 @@ Status: 200 OK Size: 37 Bytes Time: 11 ms
 Book with ID 80 updated successfully!
 ```
 ## NOTE:
-> For testing purposes, Postman was employed to interact with the API. The operations underwent testing utilizing the endpoints hosted at `localhost:/8080/...`. Snippets of each Backend operation are available for reference at the following link: [Click Here](https://github.com/MunwarAli12/BookStore/tree/main/output%20images). > 
+> For testing purposes, Postman was employed to interact with the API. The operations underwent testing utilizing the endpoints hosted at `localhost:/8080/...`. Snippets of each Backend operation are available for reference at the following link: [Click Here](https://github.com/MunwarAli12/BookStore/tree/main/output%20images). 
 
 
 
