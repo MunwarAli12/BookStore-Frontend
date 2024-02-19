@@ -1,70 +1,133 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BookStore Application
 
-## Available Scripts
+ Developed a REST API book backend application that efficiently manages book data, encompassing four key parameters: book ID, author name, pages of book and title.The application seamlessly integrates CRUD 
+ (Create, Read, Update, Delete) operations, providing a streamlined approach to handling HTTP requests.
 
-In the project directory, you can run:
+ Utilizing MongoDB as the database backend, the application ensures smooth execution of all operations. It consistently delivers appropriate HTTP status codes and responses to clients,ensuring robustness and 
+ efficiency in managing and manipulating server objects via the REST API.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `Backend Framework:` `Spring Boot`
+- `Databases:` `MongoDb` `MySQL`
+- `Tools:` `Postman` `VsCode`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### API Endpoints
 
-### `npm test`
+```bash
+Crud Operator- http://localhost:8080/
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Method   | Endpoint              | Description              |
+|----------|-----------------------|--------------------------|
+| `GET`    | `/api/books`          | Retrieve all books.      |
+| `GET`    | `/api/books/{id}`     | Retrieve a book by ID.   |
+| `POST`   | `/api/books`          | Add a new book.          |
+| `PUT`    | `/api/books/{id}`     | Update an existing book. |
+| `DELETE` | `/api/books/{id}`     | Remove a book.           |
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### @PostMapping Example Response and Output,
+```javascript
+POST http://localhost:8080/api/book
+{
+  "id":7887,
+  "title":"Hp",
+  "author": "beep",
+  "pages": 780
+} 
+```
+```javascript
+Status: 201 Created Size: 19 Bytes Time: 9 ms
+Hurray! Book saved!
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### @GetMapping  Example Response and Output for All Saved Books In Database,
+``` javascript
+GET http://localhost:8080/api/books
+```
+```javascript
+Status: 200k Size: 245 Bytes Time: 19 ms
+Hurray! Book saved!
+[
+  {
+    "id": 80,
+    "title": "munwa88r ali",
+    "author": "Na savu nenu sasta ",
+    "pages": 2022
+  },
+  {
+    "id": 78,
+    "title": "asli jod",
+    "author": null,
+    "pages": 0
+  },
+  {
+    "id": 787,
+    "title": "asli jod",
+    "author": "hussain",
+    "pages": 780
+  },
+  {
+    "id": 7887,
+    "title": "Hp",
+    "author": "beep",
+    "pages": 780
+  }
+]
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### @GetMapping  Example Response and Output for using Id ,
+``` javascript
+GET http://localhost:8080/api/books/7887
+```
+```javascript
+Status: 200 OK Size: 52 Bytes Time: 7 ms
+{
+  "id": 7887,
+  "title": "Hp",
+  "author": "beep",
+  "pages": 780
+}
+```
 
-### `npm run eject`
+##### @DeleteMappingg Example Response and Output,
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```javascript
+DELETE http://localhost:8080/api/books/{id} eg:id-787,
+{
+  "id":787,
+  "title": "asli jod",
+  "author": "hussain",
+  "pages": 780
+ }
+```
+```javascript
+Status: 200 OK Size: 38 Bytes Time: 6 ms
+Book with ID 787 deleted successfully!
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### @PutMapping Example Response and Output,
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```javascript
+PUT http://localhost:8080/api/books/{id} eg:id-80,
+{
+    "id": "80",
+    "title": "The Courage",
+    "author": "Munwar Ali",
+    "pages": 202
+  }
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+```javascript
+Status: 200 OK Size: 37 Bytes Time: 11 ms
+Book with ID 80 updated successfully!
+```
 
-## Learn More
+## NOTE
+> For testing purposes, Postman was employed to interact with the API. The operations underwent testing utilizing the endpoints hosted at `localhost:/8080/...`.
+> Snippets of each operation are available for reference at the following link: [Click Here](https://github.com/MunwarAli12/BookStore/tree/main/output%20images).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
