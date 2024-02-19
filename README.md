@@ -40,7 +40,7 @@ Crud Operator Backend - http://localhost:8080/ Frontend - http://localhost:3000/
 | `DELETE` | `/api/books/{id}`     | Remove a book.           |
 
 ## NOTE
-> The frontend communicates with the backend via HTTP requests. Error handling is implemented both on the frontend and backend to provide a smooth user experience. Ensured proper connectivity between the frontend and backend by adjusting CORS settings if necessary.
+> The frontend interacts with the backend through HTTP requests. To ensure a seamless user experience, error handling mechanisms are implemented both on the frontend and backend. Additionally, proper connectivity between the frontend and backend is done by adjusting CORS settings within the controller class in the backend.
 
 
 ## Frontend Part Overview,
