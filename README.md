@@ -50,13 +50,45 @@ Crud Operator Backend - http://localhost:8080/ Frontend - http://localhost:3000/
 - `React.js for building the user interface` `Axios for handling HTTP requests`
 `React Router for client-side routing`
 
-#### components:
+### Components,
+You can find the source code for all components in the following directory: [BookStore-Frontend/src/components](https://github.com/MunwarAli12/BookStore-Frontend/tree/main/src)
 
-- `AddBook:` Allows users to add new books to the database.
-- `DeleteBook:` Enables users to delete books by their unique ID.
-- `GetBookById:` Retrieves book details based on the provided ID.
-- `GetBooksByAuthor:` Fetches books written by a specific author.
-- `UpdateBook:` Allows users to update book details.
+`Home:` Acts as the main page of the application. 
+
+**Features**:
+- Buttons to navigate to different functionalities such as adding, deleting, updating, and retrieving books.
+- Uses React Router to render different components based on the user's actions.
+
+`1.AddBook:` Allows to add new books to the database.
+
+**Features**:
+- Input fields for ID, title, author, and pages.
+- Sends a POST request to the backend to add a new book.
+- Displays a message confirming the book addition or an error message if the operation fails.
+
+`2.DeleteBook:` Enables to delete books by their unique ID.
+
+**Features**:
+- Input field for entering the ID of the book to be deleted.
+- Sends a DELETE request to the backend to remove the book.
+- Displays a message confirming the deletion or an error message if the operation fails.
+
+`3.GetBookById:` Retrieves book details based on the provided ID.
+
+**Features**:
+- Input field for entering the ID of the book to fetch.
+- Sends a GET request to the backend to retrieve book details.
+- Displays the book details if found, or an error message if the book is not found.
+
+
+`4.UpdateBook:` Allows users to update book details.
+
+**Features**:
+- Input fields for ID, title, author, and pages.
+- Sends a PUT request to the backend to update the book details.
+- Displays a message confirming the update or an error message if the operation fails.
+
+### Response and Output
 
 #### HOME Page,
 
