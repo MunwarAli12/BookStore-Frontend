@@ -3,11 +3,8 @@
 
 ## Problem Statement,
 
-- Assume as a library clerk, encountered challenges in manually managing and recording data. Therefore, I am seeking a system that can efficiently handle book management tasks. Specifically, I need to input books into the system with four key details: their ID, author, title, and number of pages. Should a book be reissued with the same ID, it is crucial that the system allows for updates to the author, title, and page count. Additionally, in cases where a book is lost, I require the ability to promptly delete it from the records using its unique ID.
+- Assume as a library clerk, encountered challenges in manually managing and recording data. Specifically, I need to input books into the system with four key details: their ID, author, title, and number of pages. Should a book be reissued with the same ID, the system must allow for updates to the author, title, and page count. Additionally, in cases where a book is lost, I require the ability to promptly delete it from the records using its unique ID. Additionally, when users ask for books by a certain author, it's important that the system quickly gives them a full list of those books. By making these steps easier, the system wants to make managing books simpler, keep really good records, and make customers even happier.
   
-- Additionally, when users ask for books by a certain author, it's important that the system quickly gives them a full list of those books. By making these steps easier, the system wants to make managing books simpler, keep really good records, and make customers even happier.
-  
-- In this overview I've developed an end-to-end application where user actions on the frontend trigger backend requests. The backend processes these requests, updates the database as needed, and returns the results to the frontend, seamlessly updating the interface. This system streamlines operations and enhances user experience.
 
 ## WorkFlow
 
@@ -156,6 +153,7 @@ http://localhost:3000/UpdateBook
 ## Backend Part Overview,
 
 ### Technologies Used:
+
 - `Spring Boot for creating RESTful APIs` `MongoDB for data storage` `Spring Data MongoDB for database operations`
 
 #### Components:
