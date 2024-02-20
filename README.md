@@ -3,7 +3,7 @@
 
 ## Problem Statement,
 
-- Assume as a library clerk, encountered challenges in manually managing and recording data. Specifically, I need to input books into the system with four key details: their ID, author, title, and number of pages. Should a book be reissued with the same ID, the system must allow for updates to the author, title, and page count. Additionally, in cases where a book is lost, I require the ability to promptly delete it from the records using its unique ID. Additionally, when users ask for books by a certain author, it's important that the system quickly gives them a full list of those books. By making these steps easier, the system wants to make managing books simpler, keep really good records, and make customers even happier.
+- Imagine you're a library clerk facing challenges in managing and recording book data manually. You're tasked with creating a full-stack application where you can input books with their ID, author, title, and number of pages. If a book is reissued with the same ID, you should be able to update its author, title, and page count. Additionally, you need the ability to promptly delete lost books from the records using their unique ID. When users request books by a specific author, the system should quickly provide a complete list of those books. The goal is to simplify book management, maintain accurate records, and enhance customer satisfaction.
   
 
 ## WorkFlow
